@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+
+.card-button {
+    @apply bg-[#421ABC] text-white text-center rounded-full
+}

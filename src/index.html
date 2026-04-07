@@ -8,8 +8,37 @@
   </head>
   <body class="bg-black text-white font-sans">
     <!-- ========== NAVBAR ========== -->
-    <nav></nav>
+    <header class="bg-black text-white sticky top-0 z-50 py-3 border-b border-bs-gray-800">
+      <div class="w-[90%] max-w-[1100px] mx-auto">
 
+       <!-- Hamburger Button + Logo (Mobile) -->
+        <div class="flex items-center justify-between md:hidden px-4 py-2">
+          <span class="text-2xl font-bold">Tech.</span>
+          <button onclick="toggleMenu()" class="text-white text-2xl focus:outline-none">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+         <div id="mobile-menu" class="hidden flex-col gap-4 px-4 pb-4 md:hidden">
+          <a href="#about" class="text-white text-sm hover:text-purple-400 transition">About</a>
+          <a href="#service" class="text-white text-sm hover:text-purple-400 transition">Service</a>
+          <a href="#work" class="text-white text-sm hover:text-purple-400 transition">Our Work</a>
+          <a href="#team" class="text-white text-sm hover:text-purple-400 transition">Team</a>
+          <a href="#contact" class="card-button text-sm px-6 py-4 font-semibold hover:opacity-80 transition">Contact Us</a>
+         </div>
+        <!-- Desktop Menu -->
+         <nav class="hidden md:flex items-center justify-between">
+          <span class="text-2xl font-bold px-4">Tech.</span>
+          <div class="flex items-center gap-2 mx-auto">
+            <a href="#about" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">About</a>
+            <a href="#service" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">Service</a>
+            <a href="#work" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">Our Work</a>
+            <a href="#team" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">Team</a>
+            <a href="#contact" class="card-button text-sm px-6 py-3 font-semibold hover:opacity-80 transition whitespace-nowrap">Contact Us</a>
+          </div>
+         </nav>
+
+
+    </header>
     <!-- ========== HERO SECTION ========== -->
      <section></section>
 
