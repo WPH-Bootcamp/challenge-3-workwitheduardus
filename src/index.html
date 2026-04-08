@@ -62,49 +62,40 @@
       id="mobile-menu"
       class="hidden fixed top-0 left-0 w-full h-screen bg-black z-40 flex-col text-white"
     >
-      <div class="h-16 shrink-0"></div>
-      <div
-        class="absolute top-20 left-4 w-[361px] h-[240px] flex flex-col gap-3"
-      >
-        <button
-          onclick="toggleMenu()"
-          class="md:hidden flex justify-center items-center w-8 h-8 text-white focus:outline-none text-xl"
-        ></button>
-      </div>
+      <div class="absolute top-20 left-4 w-[361px] flex flex-col gap-3">
 
-      <!-- Menu Links -->
-      <div class="flex flex-col mt-2 mb-2 gap-6">
+        <!-- Menu Links -->
+          <a
+            href="#about"
+            onclick="toggleMenu()"
+            class="text-white text-base font-normal py-2 hover:text-purple-400 transition"
+            >About</a
+          >
+          <a
+            href="#service"
+            onclick="toggleMenu()"
+            class="text-white text-base font-normal py-2 hover:text-purple-400 transition"
+            >Service</a
+          >
+          <a
+            href="#work"
+            onclick="toggleMenu()"
+            class="text-white text-base font-normal py-2 hover:text-purple-400 transition"
+            >Our Work</a
+          >
+          <a
+            href="#team"
+            onclick="toggleMenu()"
+            class="text-white text-base font-normal py-2 hover:text-purple-400 transition"
+            >Team</a
+          >
         <a
-          href="#about"
+          href="#contact"
           onclick="toggleMenu()"
-          class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
-          >About</a
-        >
-        <a
-          href="#service"
-          onclick="toggleMenu()"
-          class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
-          >Service</a
-        >
-        <a
-          href="#work"
-          onclick="toggleMenu()"
-          class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
-          >Our Work</a
-        >
-        <a
-          href="#team"
-          onclick="toggleMenu()"
-          class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
-          >Team</a
+          class="mt-2 w-full bg-[#421abc] text-white text-sm text-center font-semibold py-2 rounded-full hover:opacity-80 transition flex items-center justify-center"
+          >Contact Us</a
         >
       </div>
-      <a
-        href="#contact"
-        onclick="toggleMenu()"
-        class="mt-2 w-full bg-[#421abc] text-white text-sm text-center font-semibold py-4 rounded-full hover:opacity-80 transition flex items-center justify-center"
-        >Contact Us</a
-      >
     </div>
     <main>
       <div class="flex flex-col">
@@ -112,7 +103,7 @@
         <section
           class="order-2 lg:order-1 max-w-[1100px] mx-auto text-center px-5 py-16 my-6"
         >
-          <h2 class="text-[28px] font-bold mb-5">Who We Are</h2>
+          <h2 class="title-hero">Who We Are</h2>
           <p class="text-lg font-semibold text-[#717680] max-w-21xl mx-auto">
             We're a group of tech students trained in
             <span class="font-bold text-white"
@@ -165,7 +156,7 @@
         id="services"
         class="max-w-[1100px] mx-auto text-center px-5 py-10 my-6"
       >
-        <h3 class="text-[28px] font-bold mb-2">What We Do</h3>
+        <h3 class="title-hero">What We Do</h3>
         <p class="text-sm text-[#717680] mb-10">
           We offer simple tech solutions to help your ideas grow.
         </p>
@@ -256,7 +247,7 @@
         id="work"
         class="max-w-[1100px] mx-auto text-center px-5 py-10 my-10"
       >
-        <h4 class="text-[28px] font-bold mb-2">Our Work</h4>
+        <h4 class="title-hero">Our Work</h4>
         <p class="text-base text-[#717680] mb-8">
           See what we've built with passion and purpose
         </p>
@@ -296,7 +287,7 @@
         id="team"
         class="max-w-[1100px] mx-auto text-center px-5 py-10 my-10"
       >
-        <h5 class="text-[28px] font-bold mb-2">Meet the Team</h5>
+        <h5 class="title-hero">Meet the Team</h5>
         <p class="text-base text-[#717680] mb-8">
           A group of future-ready tech makers.
         </p>
@@ -349,7 +340,7 @@
         id="contact"
         class="max-w-[1100px] mx-auto text-center px-5 py-10 my-6"
       >
-        <h6 class="text-[28px] font-bold mb-2">Let's Collaborate</h6>
+        <h6 class="title-hero">Let's Collaborate</h6>
         <p class="text-base text-[#717680] mb-10">
           Need a tech team? We're ready to help
         </p>

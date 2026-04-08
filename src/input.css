@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
 
-.card-button {
-    @apply bg-[#421ABC] text-white text-center rounded-full
+.title-hero {
+    @apply text-[28px] font-bold text-[#fdfdfd] mb-2;
 }
