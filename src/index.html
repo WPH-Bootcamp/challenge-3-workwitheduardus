@@ -9,7 +9,7 @@
   <body class="bg-black text-white font-sans leading-relaxed m-0 p-0">
     <!-- ========== NAVBAR ========== -->
     <header
-      class="bg-black w-full sticky text-white sticky top-0 z-50 py-3 border-b border-bs-gray-800"
+      class="bg-black w-full sticky text-white sticky top-0 z-50 py-3 border-bs-gray-800"
     >
       <div
         class="w-full max-w-[1100px] mx-auto px-4 h-16 flex items-center justify-between"
@@ -49,57 +49,49 @@
         <!-- Hamburger Button -->
         <button
           onclick="toggleMenu()"
-          class="md:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 focus-within:outline-none text-white focus:outline-none"
-        >
-          ☰
+          class="md:hidden flex justify-center items-center w-8 h-8 text-2xl text-white focus:outline-none">
+          <span id="icon-open">☰</span>
+          <span id="icon-close" class="hidden">x</span>
         </button>
       </div>
     </header>
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-black
-    z-[] flex-col text-white py-6 px-6 pb-10">
+    z-40 flex-col text-white py-6 px-6 pb-10">
+    <div class="h-16 mb-4"></div>
     <div class="flex items-center justify-between mb-10">
-      <span class="text-2xl font-bold">Tech.</span>
       <button
         onclick="toggleMenu()"
-        class="text-white text-2xl font-light leading-none focus:outline-none"
-      >
-        x
-      </button>
+        class="md:hidden flex justify-center items-center w-8 h-8 text-white focus:outline-none text-xl"
+      ></button>
     </div>
 
     <!-- Menu Links -->
     <div class="flex flex-col gap-6">
-      <a
-        href="#about"
+      <a href="#about"
         onclick="toggleMenu()"
-        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition border-b border-[#1a1a1a]"
-        >About</a
-      >
-      <a
-        href="#service"
+        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
+        >About</a>
+      <a href="#service"
         onclick="toggleMenu()"
-        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition border-b border-[#1a1a1a]"
-        >Service</a
-      >
-      <a
-        href="#work"
+        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
+        >Service</a>
+      <a href="#work"
         onclick="toggleMenu()"
-        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition border-b border-[#1a1a1a]"
-        >Our Work</a
-      >
+        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition "
+        >Our Work</a>
       <a
         href="#team"
         onclick="toggleMenu()"
-        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition border-b border-[#1a1a1a]"
+        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
         >Team</a
       >
     </div>
     <a
       href="#contact"
       onclick="toggleMenu()"
-      class="mt-8 w-full bg-[#421abc] text-white text-base text-center font-semibold py-4 rounded-full hover:opacity-80 transition"
+      class="mt-8 w-full bg-[#421abc] text-white text-base text-center font-semibold py-4 px-5 rounded-full hover:opacity-80 transition"
       >Contact Us</a
     >
     </div>
@@ -396,9 +388,15 @@
     <script>
       function toggleMenu() {
         const menu = document.getElementById("mobile-menu");
+        const iconOpen = document.getElementById("icon-open");
+        const iconClose = document.getElementById("icon-close");
+
         menu.classList.toggle("hidden");
         menu.classList.toggle("flex");
         document.body.classList.toggle("overflow-hidden");
+
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
       }
     </script>
   </body>
