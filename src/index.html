@@ -9,7 +9,7 @@
   <body class="bg-black text-white font-sans leading-relaxed m-0 p-0">
     <!-- ========== NAVBAR ========== -->
     <header
-      class="bg-black w-full sticky text-white sticky top-0 z-50 py-3 border-bs-gray-800"
+      class="bg-black w-full sticky text-white top-0 z-50 py-3 border-bs-gray-800"
     >
       <div
         class="w-full max-w-[1100px] mx-auto px-4 h-16 flex items-center justify-between"
@@ -58,9 +58,9 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-black
-    z-40 flex-col text-white py-6 px-6 pb-10">
-    <div class="h-16 mb-4"></div>
-    <div class="flex items-center justify-between mb-10">
+    z-40 flex-col text-white">
+    <div class="h-16 shrink-0"></div>
+    <div class="absolute top-20 left-4 w-[361px] h-[240px] flex flex-col gap-3">
       <button
         onclick="toggleMenu()"
         class="md:hidden flex justify-center items-center w-8 h-8 text-white focus:outline-none text-xl"
@@ -68,7 +68,7 @@
     </div>
 
     <!-- Menu Links -->
-    <div class="flex flex-col gap-6">
+    <div class="flex flex-col mt-2 mb-2 gap-6">
       <a href="#about"
         onclick="toggleMenu()"
         class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
@@ -91,7 +91,7 @@
     <a
       href="#contact"
       onclick="toggleMenu()"
-      class="mt-8 w-full bg-[#421abc] text-white text-base text-center font-semibold py-4 px-5 rounded-full hover:opacity-80 transition"
+      class="mt-2 w-full bg-[#421abc] text-white text-sm text-center font-semibold py-4 rounded-full hover:opacity-80 transition flex items-center justify-center"
       >Contact Us</a
     >
     </div>
