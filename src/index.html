@@ -49,7 +49,8 @@
         <!-- Hamburger Button -->
         <button
           onclick="toggleMenu()"
-          class="md:hidden flex justify-center items-center w-8 h-8 text-2xl text-white focus:outline-none">
+          class="md:hidden flex justify-center items-center w-8 h-8 text-2xl text-white focus:outline-none"
+        >
           <span id="icon-open">☰</span>
           <span id="icon-close" class="hidden">x</span>
         </button>
@@ -57,93 +58,108 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-black
-    z-40 flex-col text-white">
-    <div class="h-16 shrink-0"></div>
-    <div class="absolute top-20 left-4 w-[361px] h-[240px] flex flex-col gap-3">
-      <button
-        onclick="toggleMenu()"
-        class="md:hidden flex justify-center items-center w-8 h-8 text-white focus:outline-none text-xl"
-      ></button>
-    </div>
+    <div
+      id="mobile-menu"
+      class="hidden fixed top-0 left-0 w-full h-screen bg-black z-40 flex-col text-white"
+    >
+      <div class="h-16 shrink-0"></div>
+      <div
+        class="absolute top-20 left-4 w-[361px] h-[240px] flex flex-col gap-3"
+      >
+        <button
+          onclick="toggleMenu()"
+          class="md:hidden flex justify-center items-center w-8 h-8 text-white focus:outline-none text-xl"
+        ></button>
+      </div>
 
-    <!-- Menu Links -->
-    <div class="flex flex-col mt-2 mb-2 gap-6">
-      <a href="#about"
-        onclick="toggleMenu()"
-        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
-        >About</a>
-      <a href="#service"
-        onclick="toggleMenu()"
-        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
-        >Service</a>
-      <a href="#work"
-        onclick="toggleMenu()"
-        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition "
-        >Our Work</a>
+      <!-- Menu Links -->
+      <div class="flex flex-col mt-2 mb-2 gap-6">
+        <a
+          href="#about"
+          onclick="toggleMenu()"
+          class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
+          >About</a
+        >
+        <a
+          href="#service"
+          onclick="toggleMenu()"
+          class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
+          >Service</a
+        >
+        <a
+          href="#work"
+          onclick="toggleMenu()"
+          class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
+          >Our Work</a
+        >
+        <a
+          href="#team"
+          onclick="toggleMenu()"
+          class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
+          >Team</a
+        >
+      </div>
       <a
-        href="#team"
+        href="#contact"
         onclick="toggleMenu()"
-        class="text-white text-lg font-normal py-2 hover:text-purple-400 transition"
-        >Team</a
+        class="mt-2 w-full bg-[#421abc] text-white text-sm text-center font-semibold py-4 rounded-full hover:opacity-80 transition flex items-center justify-center"
+        >Contact Us</a
       >
     </div>
-    <a
-      href="#contact"
-      onclick="toggleMenu()"
-      class="mt-2 w-full bg-[#421abc] text-white text-sm text-center font-semibold py-4 rounded-full hover:opacity-80 transition flex items-center justify-center"
-      >Contact Us</a
-    >
-    </div>
     <main>
-      <!-- ========== HERO SECTION ========== -->
-      <section class="w-full bg-gradient-to-b from-black to-[#210A5E4D]">
-        <div
-          class="w-[90%] max-w-[1100px] mx-auto py-14 flex flex-col lg:flex-row items-center justify-between gap-10"
+      <div class="flex flex-col">
+        <!-- Who We Are -->
+        <section
+          class="order-2 lg:order-1 max-w-[1100px] mx-auto text-center px-5 py-16 my-6"
         >
-          <!-- Hero Text -->
-          <div class="max-full lg:w-1/2 text-left">
-            <h1 class="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              Build with the <em class="italic">Future.</em>
-            </h1>
-            <p class="text-[#717680] text-base font-normal mb-8 max-w-md">
-              From building sleek websites and mobile apps to integrating AI
-              solutions, we help brands turn ideas into powerful digital
-              experiences that connect, engage, and scale.
-            </p>
-            <a
-              href="#contact"
-              class="inline-block w-full max-w-[354px] text-center bg-[#421abc] text-white py-4 px-5 rounded-full hover:opacity-80 transition font-medium"
-              >Let's Talk</a
+          <h2 class="text-[28px] font-bold mb-5">Who We Are</h2>
+          <p class="text-lg font-semibold text-[#717680] max-w-21xl mx-auto">
+            We're a group of tech students trained in
+            <span class="font-bold text-white"
+              >building real-world digital products.</span
             >
-          </div>
-          <!-- Hero Image -->
-          <div class="w-full lg:w-1/2 flex justify-center">
-            <img
-              src="../assets/images/hand.png"
-              alt="hand holding phone"
-              class="w-full max-w-[420px] object-contain rounded-3xl"
-            />
-          </div>
-        </div>
-      </section>
+            <br />
+            From coding to design, we
+            <span class="font-bold text-white"
+              >craft modern solutions for modern problems.</span
+            >
+          </p>
+        </section>
 
-      <!-- Who We Are -->
-      <section class="max-w-[1100px] mx-auto text-center px-5 py-16 my-6">
-        <h2 class="text-[28px] font-bold mb-5">Who We Are</h2>
-        <p class="text-lg font-semibold text-[#717680] max-w-21xl mx-auto">
-          We're a group of tech students trained in
-          <span class="font-bold text-white"
-            >building real-world digital products.</span
+        <!-- ========== HERO SECTION ========== -->
+        <section
+          class="order-1 lg:order-2 w-full bg-gradient-to-b from-black to-[#210A5E4D]"
+        >
+          <div
+            class="w-[90%] max-w-[1100px] mx-auto py-14 flex flex-col md:flex-row items-center justify-between gap-10"
           >
-          <br />
-          From coding to design, we
-          <span class="font-bold text-white"
-            >craft modern solutions for modern problems.</span
-          >
-        </p>
-      </section>
-
+            <!-- Hero Text -->
+            <div class="w-full md:w-1/2 text-left">
+              <h1 class="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+                Build with the <em class="italic">Future.</em>
+              </h1>
+              <p class="text-[#717680] text-base font-normal mb-8 max-w-md">
+                From building sleek websites and mobile apps to integrating AI
+                solutions, we help brands turn ideas into powerful digital
+                experiences that connect, engage, and scale.
+              </p>
+              <a
+                href="#contact"
+                class="inline-block w-full max-w-[354px] text-center bg-[#421abc] text-white py-4 px-5 rounded-full hover:opacity-80 transition font-medium"
+                >Let's Talk</a
+              >
+            </div>
+            <!-- Hero Image -->
+            <div class="w-full md:w-1/2 flex justify-center">
+              <img
+                src="../assets/images/hand.png"
+                alt="hand holding phone"
+                class="w-full max-w-[420px] object-contain rounded-3xl"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
       <!-- What We Do -->
       <section
         id="services"
