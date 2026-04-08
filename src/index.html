@@ -6,16 +6,13 @@
     <title>Assignment 3 - Landing Page</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black text-white font-sans">
+  <body class="bg-black text-white font-sans leading-relaxed m-0 p-0">
     <!-- ========== NAVBAR ========== -->
-    <header class="bg-black text-white sticky top-0 z-50 py-3 border-b border-bs-gray-800">
-      <div class="w-[90%] max-w-[1100px] mx-auto">
+    <header class="bg-black w-full sticky text-white sticky top-0 z-50 py-3 border-b border-bs-gray-800">
+      <div class="w-full max-w-[1100px] mx-auto px-4 h-16 flex items-center justify-between">
 
-       <!-- Hamburger Button + Logo (Mobile) -->
-        <div class="flex items-center justify-between md:hidden px-4 py-2">
-          <span class="text-2xl font-bold">Tech.</span>
-          <button onclick="toggleMenu()" class="text-white text-2xl focus:outline-none">☰</button>
-        </div>
+       <!-- Logo. -->
+        <span class="text-2xl font-bold">Tech.</span>
 
         <!-- Mobile Menu -->
          <div id="mobile-menu" class="hidden flex-col gap-4 px-4 pb-4 md:hidden">
@@ -25,42 +22,44 @@
           <a href="#team" class="text-white text-sm hover:text-purple-400 transition">Team</a>
           <a href="#contact" class="card-button text-sm px-6 py-4 font-semibold hover:opacity-80 transition">Contact Us</a>
          </div>
-        <!-- Desktop Menu -->
-         <nav class="hidden md:flex items-center justify-between">
-          <span class="text-2xl font-bold px-4">Tech.</span>
+        <!-- Desktop Menu. -->
+         <nav class="hidden md:flex items-center gap-6">
           <div class="flex items-center gap-2 mx-auto">
             <a href="#about" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">About</a>
             <a href="#service" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">Service</a>
             <a href="#work" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">Our Work</a>
             <a href="#team" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">Team</a>
-            <a href="#contact" class="card-button text-sm px-6 py-3 font-semibold hover:opacity-80 transition whitespace-nowrap">Contact Us</a>
-          </div>
          </nav>
+            <a href="#contact" class="hidden md:inline-block bg-[#421abc] text-white text-sm px-6 py-2 font-semibold hover:opacity-80 transition">Contact Us</a>
+          </div>
+        <!-- MobileHamburger -->
+         <button onclick="toggleMenu()" id="hamburger-btn" class="md:hidden text-white text-2xl focus:outline-none">☰</button>
+         
     </header>
 
     <main>
     <!-- ========== HERO SECTION ========== -->
-     <section class="w-full bg-gradient-to-b from-black to-[#210A5E4D] mt-2">
-      <div class="w-[90%] max-w-[1100px] mx-auto py-16 flex flex-col items-center justify-between gap-8">
+     <section class="w-full bg-gradient-to-b from-black to-[#210A5E4D]">
+      <div class="w-[90%] max-w-[1100px] mx-auto py-14 flex flex-col items-center justify-between gap-10">
 
         <!-- Hero Text -->
-          <div class="max-w-[600px]text-left">
-            <h1 class="text-4xlfont-bold mb-4">Build with the Future..</h1>
-            <p class="text-[#717680] text-base font-normal mb-6">From building sleek websites and mobile apps to integrating AI solutions, we help brands turn ideas into powerful digital experiences that connect, engage, and scale.</p>
-            <a href="#contact" class="block w-full max-w-[354px] text-center bg-[#421abc] text-white py-4 px-5 rounded-full hover:opacity-80 transition font-medium">Let's Talk</a>
+          <div class="max-full lg:w-1/2 text-left">
+            <h1 class="text-4xl lg:text-5xl font-bold mb-4 leading-tight">Build with the <em class="italic">Future.</em></h1>
+            <p class="text-[#717680] text-base font-normal mb-8 max-w-md">From building sleek websites and mobile apps to integrating AI solutions, we help brands turn ideas into powerful digital experiences that connect, engage, and scale.</p>
+            <a href="#contact" class="inline-block w-full max-w-[354px] text-center bg-[#421abc] text-white py-4 px-5 rounded-full hover:opacity-80 transition font-medium">Let's Talk</a>
           </div>
         <!-- Hero Image -->
-          <div class="w-full lg:w-[45%]">
-            <img src="../assets/images/hand.png" alt="hand holding phone" class="w-full max-w-[500px] mx-auto rounded-3xl object-contain">
+          <div class="w-full lg:w-1/2 flex justify-center">
+            <img src="../assets/images/hand.png" alt="hand holding phone" class="w-full max-w-[420px] object-contain">
           </div>
       </div>
      </section>
 
     <!-- Who We Are -->
-     <section class="max-w-[1100px] mx-auto text-center px-5 py-10 my-10">
-      <h2 class="text-lg font-semibold text-[#717680]">Who We Are</h2>
-      <p class="text-lg font-semibold text-[717680]">We're a group of tech students trained in 
-        <span class="font-bold text-white">building real-world digital products.<br></span> From coding to design, we <span class="font-bold text-white">craft modern solutions for modern problems.</span></p>
+     <section class="max-w-[1100px] mx-auto text-center px-5 py-16 my-6">
+      <h2 class="text-[28px] font-bold mb-5">Who We Are</h2>
+      <p class="text-lg font-semibold text-[#717680] max-w-21xl mx-auto">We're a group of tech students trained in 
+        <span class="font-bold text-white">building real-world digital products.</span> <br/> From coding to design, we <span class="font-bold text-white">craft modern solutions for modern problems.</span></p>
      </section>
 
     <!-- What We Do -->
@@ -183,13 +182,5 @@
     <!-- ========== FOOTER ========== -->
      <footer class="text-white text-center py-4 border-t border-[#333]">© 2025 Web Programming Hack. All rights reserved.</footer>
 
-     <!-- Mobile Menu -->
-      <script>
-        function toggleMenu() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
-        menu.classList.toggle('flex');
-      }
-      </script>
   </body>
 </html>
