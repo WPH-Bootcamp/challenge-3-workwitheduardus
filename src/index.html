@@ -29,9 +29,9 @@
             <a href="#service" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">Service</a>
             <a href="#work" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">Our Work</a>
             <a href="#team" class="text-white text-sm px-3 py-2 rounded-3xl hover:text-purple-400 transition">Team</a>
-         </nav>
             <a href="#contact" class="hidden md:inline-block bg-[#421abc] text-white text-sm px-6 py-2 font-semibold hover:opacity-80 transition">Contact Us</a>
           </div>
+          </nav>
         <!-- MobileHamburger -->
          <button onclick="toggleMenu()" id="hamburger-btn" class="md:hidden text-white text-2xl focus:outline-none">☰</button>
          
@@ -63,11 +63,11 @@
      </section>
 
     <!-- What We Do -->
-     <section id="servces" class="max-w-[1100px] mx-auto text-center px-5 py-10 my-10">
+     <section id="servces" class="max-w-[1100px] mx-auto text-center px-5 py-10 my-6">
       <h3 class="text-[28px] font-bold mb-2">What We Do</h3>
-      <p class="text-sm text-[717680] mb-8">We offer simple tech solutions to help your ideas grow.</p>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-5 mt-6">
-        <div class="border border-[#333] rounded-3xl px-6 text-center hover:translate-y-1 transition duration-300">
+      <p class="text-sm text-[#717680] mb-10">We offer simple tech solutions to help your ideas grow.</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-5 ">
+        <div class="border border-[#333] rounded-3xl p-6 text-center hover:translate-y-1 transition duration-300">
           <img src="../assets/icons/WebDev.png" alt="Web Development Icon" class="w-11 mx-auto mb-4">
           <div class="text-lg font-bold mb-2">Web Development</div>
           <div class="text-sm text-[#717680]">Modern websites using HTML, CSS, JavaScript, and frameworks.</div>
@@ -82,19 +82,19 @@
           <div class="text-lg font-bold mb-2">AI Integration</div>
           <div class="text-sm text-[#717680]">Smart solutions using AI-powered tools and automation.</div>
         </div>
-        <div class="border border-[#333] rounded-3xlpx-6
+        <div class="border border-[#333] rounded-3xl px-6
          text-center hover:translate-y-1 transition duration-300">
           <img src="../assets/icons/UI.png" alt="UI/UX Design Icon" class="w-11 mx-auto mb-4">
           <div class="text-lg font-bold mb-2">UI/UX Design</div>
           <div class="text-sm text-[#717680]">Clean and functional designs for better user experience.</div>
         </div>
-        <div class="border border-[#333] rounded-3xlpx-6
+        <div class="border border-[#333] rounded-3xl px-6
          text-center hover:translate-y-1 transition duration-300">
           <img src="../assets/icons/Landing.png" alt="Landing Page Icon" class="w-11 mx-auto mb-4">
           <div class="text-lg font-bold mb-2">Landing Page</div>
           <div class="text-sm text-[#717680]">High-converting landing pages for your product or business.</div>
         </div>
-        <div class="border border-[#333] rounded-3xlpx-6
+        <div class="border border-[#333] rounded-3xl px-6
          text-center hover:translate-y-1 transition duration-300">
           <img src="../assets/icons/CMS.png" alt="CMS integration Icon" class="w-11 mx-auto mb-4">
           <div class="text-lg font-bold mb-2">CMS Integration</div>
@@ -161,20 +161,22 @@
       </section>
     
     <!-- Let's Collaborate -->
-     <section id="contact" class="max-w-[1100px] mx-auto text-center px-5 py-10 my-10">
-      <h6 class="text-base font-bold mb-2">Let's Collaborate</h6>
-      <p class="text-base text-[#717680] mb-8">Need a tech team? We're ready to help</p>
-      <div class="flex flex-col gap-3 max-w-[600px] mx-auto text-left px-5">
-        <label for="Name" class="font-bold text-base text-white">Name</label>
-        <input type="text" id="Name" name="Name" placeholder="Eneter Your Name" required class="w-full bg-black border border-[#333] rounded-md text-white px-3 py-2 outline-none placeholder-[#555] focus:border-[#421abc] transition mb-2" />
+     <section id="contact" class="max-w-[1100px] mx-auto text-center px-5 py-10 my-6">
+      <h6 class="text-[28px] font-bold mb-2">Let's Collaborate</h6>
+      <p class="text-base text-[#717680] mb-10">Need a tech team? We're ready to help</p>
 
-        <label for="Email" class="font-bold text-base text-white" Email></label>
-        <input type="Email" id="Email" name="Email" placeholder="Enter Your Email" required class="w-full bg-black border-[#333] rounded-md text-white px-3 py-2 outline-none placeholder-[#555] focus:border-[#421abc] transition mb-2"/>
+       <div class="flex flex-col gap-4 max-w-[600px] mx-auto text-left">
+        <label for="Name" class="font-bold text-sm text-white">Name</label>
+        <input type="text" id="Name" name="Name" placeholder="Eneter Your Name" required class="w-full bg-black border border-[#333] rounded-lg text-white px-4 py-3 outline-none placeholder-[#555] focus:border-[#421abc] transition" />
 
-        <label for="Message" class="font-bold text-base text-white">Message</label>
-        <textarea name="Message" id="Message" placeholder="Enter Your Message" required class="w-full bg-black border border-[#333] rounded-md text-white px-3 py-2 outline-none placeholder-[#555] focus:border-[#421abc] transition mb-2"></textarea>
+        <label for="Email" class="font-bold text-sm text-white" >Email</label>
+        <input type="Email" id="Email" name="Email" placeholder="Enter Your Email" required class="w-full bg-black border border-[#333] rounded-lg text-white px-4 py-3 outline-none placeholder-[#555] focus:border-[#421abc] transition"/>
 
-        <button type="submit" class="w-full py-4 bg-[#421abc] transition resize-y h-16 mb-2">Send</button>
+        <label for="Message" class="font-bold text-sm
+        text-white">Message</label>
+        <textarea name="Message" id="Message" placeholder="Enter Your Message" required class="w-full bg-black border border-[#333] rounded-md text-white px-4 py-3 outline-none placeholder-[#555] focus:border-[#421abc] transition resize-y"></textarea>
+
+        <button type="submit" class="w-full py-4 bg-[#421abc] text-white text-base font-semibold rounded-full cursor-pointer mt-2 hover:opacity-80 transition">Send</button>
       </div>
      </section>
     </main>
