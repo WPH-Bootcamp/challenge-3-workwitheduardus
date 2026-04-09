@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+
+.title-hero {
+    @apply text-[28px] font-bold text-[#fdfdfd] mb-2;
+}
+
+.desktop-contact { display: none;}
+
+@media (min-width: 768px) {
+    .desktop-contact { display: inline-block;}
+}
